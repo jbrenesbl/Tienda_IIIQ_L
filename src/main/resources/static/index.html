@@ -1,26 +1,107 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tienda en línea</title>
+        <meta charset="UTF-8">  
+        <meta name="description" content="Página de lección 2"/>
+        <meta name="keywords" content="html5, css3, web, fidelitas">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div>
-            <h1>Titulo 1</h1>
-            <h2>Titulo 2</h2>
-        </div>
-        <h3>Titulo 3</h3>        
-        <h4>Titulo 4</h4>
-        <h5>Titulo 5</h5>
-        <h6>Titulo 6</h6>
+        <header class="header">
+            <nav class="nav">
+                <a href="index.html" class="logo nav-link">TechShop</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Ejemplo9.html">&LeftTriangleBar;</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="ejemplo2.html.html">&RightTriangleBar;</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="audios.html">Audios</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="videos.html">Videos</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="iframes.html">Iframes</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="formularios.html">Formularios</a></li>
+                </ul>
+            </nav>
+        </header>
+        <aside id="barraLateral">
+            <h2>Productos más vendidos</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>            
+        </aside>
+        <section id="contenido">
+            <h2>Articulos Principales</h2>
+            <article>
+                <header>Asus Vivobook</header>
+                <p class="descripcion">
+                    <cite>Lorem ipsum dolor sit amet</cite>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <figure>
+                    <img src="images/Equipo1.jpg" width="200" />
+                    <figcaption>Imagen con fines ilustrativos</figcaption>
+                </figure>
+            </article>
+            <article>
+                <header>Alienware ATD 900</header>
+                <p class="descripcion">
+                    <strong>Lorem ipsum dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <figure>
+                    <img src="images/Equipo2.jpg" width="200" />
+                    <figcaption>Más vendido</figcaption>
+                </figure>
+            </article>
+            <article>
+                <header>impresora 3D</header>
+                <p class="descripcion">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <figure>
+                    <img src="images/Equipo3.jpg" width="200" />
+                    <figcaption>Más económico</figcaption>
+                </figure>
+            </article>
+            <br>
+            <article>
+                <h2>Lineas de productos</h2>
+                <table border="0">
+                    <thead id="encabezadoTabla">
+                        <tr>
+                            <th>Código</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaResumen">
+                        <tr>
+                            <td>1</td>
+                            <td>Teclados</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Monitores</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Headsets</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Baterias</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Cargadores</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Portátiles</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-        <br/>
-        <br/>
-        <p>Lorem ipsum dolor sit <span style="font-weight: bold">amet consectetur adipiscing</span> elit sodales pharetra nullam, scelerisque eleifend magna at maecenas nostra cubilia aliquet rutrum, velit venenatis hac ultrices ac ut auctor potenti duis. Vel semper inceptos vitae massa et torquent cursus malesuada montes, vivamus a metus donec convallis varius netus ullamcorper commodo leo, lectus ultricies blandit dis eros interdum potenti ultrices. Dictum mi parturient sodales faucibus platea ac aliquet torquent est, nec massa nisi enim luctus phasellus ornare volutpat nisl, vulputate sed inceptos dapibus vitae tristique dis aenean.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sodales pharetra nullam, scelerisque eleifend magna at maecenas nostra cubilia aliquet rutrum, velit venenatis hac ultrices ac ut auctor potenti duis. Vel semper inceptos vitae massa et torquent cursus malesuada montes, vivamus a metus donec convallis varius netus ullamcorper commodo leo, lectus ultricies blandit dis eros interdum potenti ultrices. Dictum mi parturient sodales faucibus platea ac aliquet torquent est, nec massa nisi enim luctus phasellus ornare volutpat nisl, vulputate sed inceptos dapibus vitae tristique dis aenean.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sodales pharetra nullam, scelerisque eleifend magna at maecenas nostra cubilia aliquet rutrum, velit venenatis hac ultrices ac ut auctor potenti duis. Vel semper inceptos vitae massa et torquent cursus malesuada montes, vivamus a metus donec convallis varius netus ullamcorper commodo leo, lectus ultricies blandit dis eros interdum potenti ultrices. Dictum mi parturient sodales faucibus platea ac aliquet torquent est, nec massa nisi enim luctus phasellus ornare volutpat nisl, vulputate sed inceptos dapibus vitae tristique dis aenean.</p>
-
-
+            </article>
+        </section>
+        <footer id="piePagina">
+            Derechos reservados &COPY; 2022 <address style="display: inline">Tibás, Colima</address> <address style="display: inline">Tel 8820-2655</address>
+        </footer>
     </body>
 </html>
